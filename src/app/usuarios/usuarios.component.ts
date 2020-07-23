@@ -13,11 +13,11 @@ export class UsuariosComponent implements OnInit {
   constructor(protected userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getUser()
-    .subscribe(
+    this.userService.getUser() //Manda a llamar al servio
+    .subscribe(//Subscribe para retonar informacion del url
       (data)=> {
         //sucess
-        this.users= data['results']
+        this.users= data['results'] //Apunta a la informacion que quiero de JSON y se lo mando a mi variable
       },
       (error)=>{
         console.error(error)

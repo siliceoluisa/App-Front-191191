@@ -10,7 +10,7 @@ export class UserService {
   constructor(protected http: HttpClient) { }
 
   getUserLogin(){
-    return this.http.get('https://randomuser.me/api/?results=10');
+    return this.http.get('https://randomuser.me/api/?results=10'); //metodo para mostrar los datos que quiero del URL
   }
 
   getUserDash(){
